@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="styles/styles.css" type="text/css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <select class="choose_period">
+        <option class="period_value" value="basic_value">Choose value</option>
+        <option class="period_value" value="days">Days</option>
+        <option class="period_value" value="hours">Hours</option>
+        <option class="period_value" value = "minutes">Minutes</option>
+        <option class="period_value" value="seconds">Seconds</option>
+
+    </select>
+    <select class="choose_days_type">
+        <option value="all_days">All days</option>
+        <option value="work_days">Work days</option>
+        <option value="days_off">Days off</option>
+    </select>
+</div>
+<div>
+    <input type="date" id="start">
+    <input type = "date" id = "end">
+</div>
+<div>
+<button class="week_preset">Add week</button>
+<button class="month_preset">Add month</button>
+</div>
+<div> <button class="result_btn">Calculate</button>
+</div>
+<div class="result"></div>
+<div class="ListOf">
+    <ol></ol>
+</div>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
